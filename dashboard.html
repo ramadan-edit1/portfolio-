@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="dashboard.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+<h1>Ramadan Portfolio</h1>
+
+<p>Discount Dashboard</p>
+
+</header>
+
+<div class="stats">
+
+<div class="card">
+<h2 id="totalCodes">0</h2>
+<span>Total Codes</span>
+</div>
+
+<div class="card">
+<h2 id="activeCodes">0</h2>
+<span>Active</span>
+</div>
+
+<div class="card">
+<h2 id="usedCodes">0</h2>
+<span>Total Uses</span>
+</div>
+
+</div>
+
+<div class="createBox">
+
+<h2>Create Discount</h2>
+
+<input
+type="text"
+id="newCode"
+placeholder="Discount Code">
+
+<input
+type="number"
+id="newDiscount"
+placeholder="Discount %">
+
+<input
+type="number"
+id="newMaxUses"
+placeholder="Max Uses">
+
+<div class="buttons">
+
+<button id="generateBtn">
+Generate Code
+</button>
+
+<button id="createBtn">
+Create
+</button>
+
+</div>
+
+</div>
+
+<div class="tableBox">
+
+<h2>Discount Codes</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Code</th>
+<th>Discount</th>
+<th>Used</th>
+<th>Max</th>
+<th>Status</th>
+<th>Actions</th>
+
+</tr>
+
+</thead>
+
+<tbody id="codesTable">
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+<div class="modal" id="editModal">
+
+    <div class="modal-box">
+
+        <h2>Edit Discount</h2>
+
+        <input
+        type="number"
+        id="editDiscount"
+        placeholder="Discount %">
+
+        <input
+        type="number"
+        id="editMaxUses"
+        placeholder="Max Uses">
+
+        <div class="modal-buttons">
+
+            <button id="saveEdit">
+                Save
+            </button>
+
+            <button id="cancelEdit">
+                Cancel
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+<script type="module" src="dashboard.js"></script>
+
+<div id="toast"></div>
+
+</body>
+</html>

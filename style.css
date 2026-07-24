@@ -356,3 +356,52 @@ a:focus-visible, button:focus-visible{outline:2px solid var(--blue); outline-off
   .logo img{width:42px;}
   .logo-circle{width:220px; height:220px;}
 }
+
+.discount-box{
+    max-width:600px;
+    margin:40px auto 0;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.discount-box input{
+    width:100%;
+    padding:18px;
+    border:1px solid var(--line);
+    border-radius:14px;
+    background:var(--bg-panel);
+    color:var(--text);
+    font-size:16px;
+    outline:none;
+    transition:.3s;
+}
+
+.discount-box input:focus{
+    border-color:var(--blue);
+    box-shadow:0 0 20px rgba(46,168,255,.2);
+}
+
+.discount-box button{
+    padding:18px;
+    border:none;
+    border-radius:14px;
+    background:var(--blue);
+    color:#fff;
+    font-size:17px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.discount-box button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 12px 30px rgba(46,168,255,.3);
+}
+
+#discountMessage{
+    text-align:center;
+    font-size:15px;
+    min-height:20px;
+    color:var(--blue);
+}
